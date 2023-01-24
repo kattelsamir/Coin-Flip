@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+    display: flex;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 5px;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.container .coin-image {
+    width: 300px;
+    background: url(../img/coin.png) no-repeat center center/ cover;
+    height: 300px;
+}
+
+.container ul {
+    list-style: none;
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15%;
+}
+
+.container .guess-box {
+    display: flex;
+    width: 80%;
+    /* justify-content: right; */
+}
+
+.guess {
+    display: flex;
+    align-items: center;
+    width: auto;
+    font-size: 1.2rem;
+    font-weight: 800;
+    align-self: center;
+    gap: 5%;
+}
+
+.guess-score {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.guess-correct{
+    color: green;
+}
+
+.guess-incorrect{
+    color: red;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 5%;
+    width: 50px;
+    background-color: gold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.button:hover {
+    background-color: goldenrod;
+}
+
+/* Overlay Effect */
+
+
+#overlay-text{
+    display: none;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    font-size: 3.7rem;
+    transform: translate(-50%,-50%);
+    color: green;
+    text-align: center;
+    width: 50%;
+}
