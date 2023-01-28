@@ -8,7 +8,6 @@ let overlayText = document.getElementById('overlay-text');
 var cGuess = 0;
 var icGuess = 0;
 
-
 //The coinflip function
 function coinflip(a) {
     if ((Math.random() < 0.5 && a == 0) || (Math.random() > 0.5 && a == 1)) {
